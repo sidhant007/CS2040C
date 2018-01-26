@@ -2,7 +2,7 @@
 
 Below are the links for all the labs.
 
-  [Lab 01](https://github.com/sidhant007/CS2040C/lab01)
+  [Lab 01](https://sidhant007.github.io/CS2040C/lab01)
 
 ```markdown
 Syntax highlighted code block
