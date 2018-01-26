@@ -4,22 +4,12 @@ Below are the links for all the labs.
 
   [Lab 01](https://sidhant007.github.io/CS2040C/lab01)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
+I will try to give out **Challenge Question(s)** for most of the labs.
+**These questions are given from my side (not the prof) they may / may not be relevant to the exam**
+**Do try them out, if you have enough time and find the module interesting**
 
 [Link](url) and ![Image](src)
 ```
-
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/)
