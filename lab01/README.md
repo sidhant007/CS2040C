@@ -25,7 +25,7 @@ Q) Given a list of names, how would you sort these names in alphabetical order ?
 
 <details>
   <summary>Solution</summary>
-  Push all the names as strings in a vector\<string\> V, then use sort(V.begin(), V.end())
+  Push all the names as strings in a vector&lt;string&gt; V, then use sort(V.begin(), V.end())
 </details>
 
 Q) Try to do the REGISTER question using the mathematical approach, which we discussed in the lab.
