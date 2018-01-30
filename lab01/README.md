@@ -16,6 +16,9 @@ Challenge Questions -
 
 Q) Given a string, check if it is a palindrome or NOT without using any kind of loops / goto / recursive statements.
 
+Spoiler below
+>! Use **reverse(s.begin(), s.end())**, where **s** is the string.
+
 Q) Given a list of names, how would you sort these names in alphabetical order ?
 
 Q) Try to do the REGISTER question using the mathematical approach, which we discussed in the lab.
