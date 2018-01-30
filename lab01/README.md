@@ -16,17 +16,22 @@ Challenge Questions -
 
 Q) Given a string, check if it is a palindrome or NOT without using any kind of loops / goto / recursive statements.
 
-<<<<<<< HEAD
 <details>
   <summary>Solution</summary>
-   Use reverse(s.begin(), s.end()), where **s** is the string.
+   Use reverse(s.begin(), s.end()), where s is the string.
 </details>
-=======
-Spoiler below
->! Use **reverse(s.begin(), s.end())**, where **s** is the string.
->>>>>>> c203d8c3a97b27cd9ab57082d6b9ab04bbf977ce
 
 Q) Given a list of names, how would you sort these names in alphabetical order ?
 
+<details>
+  <summary>Solution</summary>
+  Push all the names as strings in a vector<string> V, then use sort(V.begin(), V.end())
+</details>
+
 Q) Try to do the REGISTER question using the mathematical approach, which we discussed in the lab.
 
+<details>
+  <summary>Solution</summary>
+  <img src = "register_math.png">
+  The above code is written by Srivastave Aaryam (one of the students)
+</details>
