@@ -16,10 +16,15 @@ Challenge Questions -
 
 Q) Given a string, check if it is a palindrome or NOT without using any kind of loops / goto / recursive statements.
 
+<<<<<<< HEAD
 <details>
   <summary>Solution</summary>
    Use reverse(s.begin(), s.end()), where **s** is the string.
 </details>
+=======
+Spoiler below
+>! Use **reverse(s.begin(), s.end())**, where **s** is the string.
+>>>>>>> c203d8c3a97b27cd9ab57082d6b9ab04bbf977ce
 
 Q) Given a list of names, how would you sort these names in alphabetical order ?
 
