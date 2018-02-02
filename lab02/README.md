@@ -1,6 +1,6 @@
 ## Lab 02
 
-  [Feedback form](https://docs.google.com/forms/d/e/1FAIpQLScLeIezAu3Bueokx98FzaNraoK_90lxMd6trBRnnNLXKQjojg/viewform?usp=sf_link) (Please fill this)
+  [Feedback form](https://docs.google.com/forms/d/e/1FAIpQLScLeIezAu3Bueokx98FzaNraoK_90lxMd6trBRnnNLXKQjojg/viewform?usp=sf_link) (Please fill this form, to give feedback about this lab)
 
 Here is a pdf version of the ppt I covered during the lab. And the codes that I (skimmed through) / (demonstrated live).
 
@@ -15,6 +15,15 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
   [set_intersection.cpp](https://sidhant007.github.io/CS2040C/lab01/set_intersection.cpp) (set intersection result of 2 sorted vectors)
 
   [findSumZ.cpp](https://sidhant007.github.io/CS2040C/lab01/findSumZ.cpp) (The problem states that given a sorted vector V and a target variable Z find 2 elements in V, such that the sum of those 2 elements is equal to z)
+
+  Apart from all this I would like you all to go through these function below for many different use cases - 
+  [nth_element](http://en.cppreference.com/w/cpp/algorithm/nth_element) (Can be useful for PS1 :o )
+  [binary_search](http://en.cppreference.com/w/cpp/algorithm/binary_search) (This function assumes the vector/array to be already sorted)
+  [lower_bound](http://en.cppreference.com/w/cpp/algorithm/lower_bound) (Assumes vector to be sorted. Also see upper_bound)
+  [unique](http://en.cppreference.com/w/cpp/algorithm/unique) (Returns a iterator/pointer to the end of the resulting vector, see example for clarity)
+  [set_intersection](http://en.cppreference.com/w/cpp/algorithm/set_intersection) (In the example given, this function uses [back_inserter()](http://en.cppreference.com/w/cpp/iterator/back_inserter))
+  [set_union](http://en.cppreference.com/w/cpp/algorithm/set_union) (Similar to above one)
+  [tuple](http://en.cppreference.com/w/cpp/utility/tuple/get) (See the example here, highlights are - can use auto to make_tuple() and can also do get<data_type> is ensured that there is only entry in the tuple having data_type)
 
 Challenge Questions - 
 
