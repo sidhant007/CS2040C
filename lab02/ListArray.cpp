@@ -13,6 +13,7 @@ class ListArray {
     // ^Constructor.
 
     int get(int i) {
+      if(i < 0 or i >= N) return -1;
       return A[i]; // question 1c
       // Check if i > N ?
     }
@@ -51,7 +52,7 @@ class ListArray {
     }
 
     void sortList() { // sort array A, question 1g
-      for (int i = 0; i < N-1; i++) //bubble sort.
+      for (int i = 0; i < N-1; i++) //Selection sort
         for (int j = i+1; j < N; j++)
           if (A[i] > A[j]) {
             // int temp = A[i];

@@ -8,7 +8,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   [ListArray.cpp](https://sidhant007.github.io/CS2040C/lab02/ListArray.cpp) (The list array code shown in Tut01)
 
-  [ListVector.cpp](https://sidhant007.github.io/CS2040C/lab02/ListVector.cpp) (Using vector instead of array in the list array code) 
+  [ListVector.cpp](https://sidhant007.github.io/CS2040C/lab02/ListVector.cpp) (Using vector instead of array in the list array code) (**Fixed a bug in insert function please go through this**)
 
   [Birthday.cpp](https://sidhant007.github.io/CS2040C/lab02/Birthday.cpp) (Birthday sorting problem. Highlights of this problem were - using tuple, using multiply with -1 for year, to sort in descending according to year)
 

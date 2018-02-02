@@ -26,12 +26,16 @@ class ListVector {
       if ((i < 0) || (i > (int)A.size())) return; // question 1d, N is not fixed to 10
       // for (int j = i; j <= N-1; j++) // question 1e
       //   A[j+1] = A[j];
+      if(N == (int)A.size()) 
+        A.push_back(0); //Adding a dummy element at the back if we need to strech the vector
+      //^fix.
       for (int j = N-1; j >= i; j--)
         A[j+1] = A[j];
 
-      if (i == (int)A.size()) A.push_back(v);
-      else                    A[i] = v;
-      // ^see this. need to push back if adding new element, can't just reassign at that time.
+      A[i] = v;
+      // if (i == (int)A.size()) A.push_back(v);
+      // else                    A[i] = v;
+      // ^sorry, this is wrong :(
 
       N++;
     }
