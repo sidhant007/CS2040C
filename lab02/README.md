@@ -16,7 +16,8 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   [findSumZ.cpp](https://sidhant007.github.io/CS2040C/lab01/findSumZ.cpp) (The problem states that given a sorted vector V and a target variable Z find 2 elements in V, such that the sum of those 2 elements is equal to z)
 
-  Apart from all this I would like you all to go through these function below for many different use cases - 
+  **Apart from all this I would like you all to go through these function below for many different use cases** - 
+
   [nth_element](http://en.cppreference.com/w/cpp/algorithm/nth_element) (Can be useful for PS1 :o )
 
   [binary_search](http://en.cppreference.com/w/cpp/algorithm/binary_search) (This function assumes the vector/array to be already sorted)
@@ -31,7 +32,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
   
   [tuple](http://en.cppreference.com/w/cpp/utility/tuple/get) (See the example here, highlights are - can use auto to make_tuple() and can also do get<data_type> is ensured that there is only entry in the tuple having data_type)
 
-Challenge Questions - 
+**Challenge Questions** - 
 
 Q) Given an already sorted vector V and a target variable Z in input, check if there exists 2 elements in v, such that x + y = z, where x and y both belong to V. **This should be done in O(n)** (Do note - The vector in this case is sorted already in input)
 
@@ -47,7 +48,7 @@ Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-po
   NA
 </details>
 
-Q) Sort a collection of names (represented as strings using only 'a' - 'z' without any spaces) first based on ascending length of the names, incase of ties, break the ties by descending order of the names themselves (Ex. "xyz" vs "abc", here xyz will come before because since the lengths are equal we do in descending order)
+Q) Sort a collection of names (represented as strings using only 'a' - 'z' without any spaces) first based on ascending length of the names, incase of ties, break the ties by descending order of the names themselves (Ex. {"abc", "ab", "xyz"} in sorted order will be {"ab", "xyz", "abc"})
 
 <details>
   <summary>Solution</summary>
