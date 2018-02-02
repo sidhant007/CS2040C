@@ -18,33 +18,38 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   Apart from all this I would like you all to go through these function below for many different use cases - 
   [nth_element](http://en.cppreference.com/w/cpp/algorithm/nth_element) (Can be useful for PS1 :o )
+
   [binary_search](http://en.cppreference.com/w/cpp/algorithm/binary_search) (This function assumes the vector/array to be already sorted)
+
   [lower_bound](http://en.cppreference.com/w/cpp/algorithm/lower_bound) (Assumes vector to be sorted. Also see upper_bound)
+  
   [unique](http://en.cppreference.com/w/cpp/algorithm/unique) (Returns a iterator/pointer to the end of the resulting vector, see example for clarity)
+
   [set_intersection](http://en.cppreference.com/w/cpp/algorithm/set_intersection) (In the example given, this function uses [back_inserter()](http://en.cppreference.com/w/cpp/iterator/back_inserter))
+
   [set_union](http://en.cppreference.com/w/cpp/algorithm/set_union) (Similar to above one)
+  
   [tuple](http://en.cppreference.com/w/cpp/utility/tuple/get) (See the example here, highlights are - can use auto to make_tuple() and can also do get<data_type> is ensured that there is only entry in the tuple having data_type)
 
 Challenge Questions - 
 
-Q) Given a string, check if it is a palindrome or NOT without using any kind of loops / goto / recursive statements.
+Q) Given an already sorted vector V and a target variable Z in input, check if there exists 2 elements in v, such that x + y = z, where x and y both belong to V. **This should be done in O(n)** (Do note - The vector in this case is sorted already in input)
 
 <details>
   <summary>Solution</summary>
-   Use reverse(s.begin(), s.end()), where s is the string.
+  NA
 </details>
 
-Q) Given a list of names, how would you sort these names in alphabetical order ?
+Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-pointer style approach. (Will resemble to the merge operation in a merge sort)
 
 <details>
   <summary>Solution</summary>
-  Push all the names as strings in a vector&lt;string&gt; V, then use sort(V.begin(), V.end())
+  NA
 </details>
 
-Q) Try to do the REGISTER question using the mathematical approach, which we discussed in the lab.
+Q) Sort a collection of names (represented as strings using only 'a' - 'z' without any spaces) first based on ascending length of the names, incase of ties, break the ties by descending order of the names themselves (Ex. "xyz" vs "abc", here xyz will come before because since the lengths are equal we do in descending order)
 
 <details>
   <summary>Solution</summary>
-  <img src = "register_math.png">
-  The above code is written by Srivastave Aaryam (one of the students)
+  NA
 </details>
