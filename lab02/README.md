@@ -8,13 +8,13 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   [ListArray.cpp](https://sidhant007.github.io/CS2040C/lab02/ListArray.cpp) (The list array code shown in Tut01)
 
-  [ListVector.cpp](https://sidhant007.github.io/CS2040C/lab01/ListVector.cpp) (Using vector instead of array in the list array code) 
+  [ListVector.cpp](https://sidhant007.github.io/CS2040C/lab02/ListVector.cpp) (Using vector instead of array in the list array code) 
 
-  [Birthday.cpp](https://sidhant007.github.io/CS2040C/lab01/Birthday.cpp) (Birthday sorting problem. Highlights of this problem were - using tuple, using multiply with -1 for year, to sort in descending according to year)
+  [Birthday.cpp](https://sidhant007.github.io/CS2040C/lab02/Birthday.cpp) (Birthday sorting problem. Highlights of this problem were - using tuple, using multiply with -1 for year, to sort in descending according to year)
 
-  [set_intersection.cpp](https://sidhant007.github.io/CS2040C/lab01/set_intersection.cpp) (set intersection result of 2 sorted vectors)
+  [set_intersection.cpp](https://sidhant007.github.io/CS2040C/lab02/set_intersection.cpp) (set intersection result of 2 sorted vectors)
 
-  [findSumZ.cpp](https://sidhant007.github.io/CS2040C/lab01/findSumZ.cpp) (The problem states that given a sorted vector V and a target variable Z find 2 elements in V, such that the sum of those 2 elements is equal to z)
+  [findSumZ.cpp](https://sidhant007.github.io/CS2040C/lab02/findSumZ.cpp) (The problem states that given a sorted vector V and a target variable Z find 2 elements in V, such that the sum of those 2 elements is equal to z)
 
   **Apart from all this I would like you all to go through these function below for many different use cases** - 
 
