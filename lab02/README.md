@@ -30,7 +30,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   [set_union](http://en.cppreference.com/w/cpp/algorithm/set_union) (Similar to above one)
   
-  [tuple](http://en.cppreference.com/w/cpp/utility/tuple/get) (See the example here, highlights are - can use auto to make_tuple() and can also do get<data_type> is ensured that there is only entry in the tuple having data_type)
+  [tuple](http://en.cppreference.com/w/cpp/utility/tuple/get) (See the example here, highlights are - can use auto to make_tuple() and can also do get&lgt;data_type&rgt; if ensured that there is only entry in the tuple having data_type)
 
 **Challenge Questions** - 
 
