@@ -42,6 +42,7 @@ Q) Given an already sorted vector V and a target variable Z in input, check if t
 </details>
 
 Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-pointer style approach. (Will resemble to the merge operation in a merge sort)
+**Update - 2 pointer approach basically means avoid using set_union and set_intersection**
 
 <details>
   <summary>Solution</summary>
