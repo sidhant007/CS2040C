@@ -48,7 +48,13 @@ Q) Given an already sorted vector V and a target variable Z in input, check if t
       break;
     }
   }
-  // The broad idea is to have 2 pointers, one on the left most side of the vector and the other on the right most side. Now slowly move the right pointer leftwards, i.e decrement its postion by -1. While you are moving it to the left you will realise that the net sum of A[l] + A[r] would decrease, because A[r] < A[r + 1], so to again up this value close to Z, you move l pointer forward, i.e increment it. 
+  // The broad idea is to have 2 pointers, one on the left most 
+  // side of the vector and the other on the right most side.
+  // Now slowly move the right pointer leftwards, i.e decrement 
+  // its postion by -1. While you are moving it to the left you 
+  // will realise that the net sum of A[l] + A[r] would decrease, 
+  // because A[r] < A[r + 1], so to again up this value close 
+  // to Z, you move l pointer forward, i.e increment it. 
   </pre>
 </details>
 
@@ -86,6 +92,15 @@ Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-po
   }
   for(auto v : res) cout<<v<<" ";
   cout<<endl;
+  // Here the broad idea is that you keep 2 pointers 
+  // where you move the one which points to the smaller element
+  // and push it in the res vector if and only if the current 
+  // element at the top of the res vector is different from the element
+  // being pushed. This ensured that an element is only pushed once.
+  // Therefore it is equivalent to a set_union.
+  // If you did NOT keep the top condition and just pushed it regardless of
+  // the current top, then this would be the code for the merge step in 
+  // a merge-sort algorithm implementation.
   </pre>
 </details>
 
@@ -96,4 +111,4 @@ Q) Sort a collection of names (represented as strings using only 'a' - 'z' witho
   The broad idea is to make a pair<int, string> where pair.first = -1 * length_of_the_string and pair.second = the string itself, so now we sort a vector of these pairs and then reverse it. One alternate approach is to define your own comparator function and another alternate approach but slightly complicated is to remap 'a' to 'z' , 'b' to 'y', 'c' to 'x' and so on, now the strings will "kind of look like negated strings", so now you could just sort the entire thing, using +1 * length_of_the_string in pair.first.
 </details>
 
-**Note** - I haven't tested the 2 pseudo-codes for the challenge questions on corner test cases and only verified that they work on simpler ones, in case any one of you find an issue with these codes, do drop me a mail :)
+**Note** - I haven't tested the 2 pseudo-code solutions for the challenge questions on corner test cases and only verified that they work on simpler ones, in case any one of you find an issue with these codes, do drop me a mail :)
