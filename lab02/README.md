@@ -40,12 +40,20 @@ Q) Given an already sorted vector V and a target variable Z in input, check if t
   <summary>Solution</summary>
   <code>
   // Let the vector be V and the target be Z. Assuming V to be sorted.
+
   int l = 0;
+
   for(int r = (int)V.size() - 1; r >= 0; r--) {
+
     while(V[l] + V[r] < z and l + 1 < r)  l++;
+
     if(V[l] + V[r]  == z) {
+
       cout<<"Found --> "<<V[l]<<" "<<V[r]<<endl;
+
+      break;
     }
+
   }
   </code>
 </details>
@@ -62,5 +70,5 @@ Q) Sort a collection of names (represented as strings using only 'a' - 'z' witho
 
 <details>
   <summary>Solution</summary>
-  The broad idea is to make a pair<int, string> where pair.first = -length_of_th_string and pair.second = the string itself, so now we sort a vector of these pairs and then reverse it. An alternate approach is to define your own comparator function.
+  The broad idea is to make a pair<int, string> where pair.first = -length_of_the_string and pair.second = the string itself, so now we sort a vector of these pairs and then reverse it. An alternate approach is to define your own comparator function.
 </details>
