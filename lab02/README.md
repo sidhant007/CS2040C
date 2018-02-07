@@ -63,7 +63,7 @@ Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-po
   // top denotes the current top value in the res vector. 
   // I am assuming that both the vectors will NOT contain any -1.
   // -1 is a sentinel value used to make the code shorter.
-  vector<int> res; //The vector which will have the union result.
+  vector&l;int&rt; res; //The vector which will have the union result.
   while(l1 < (int)A.size() or l2 < (int)B.size()) {
     if(l1 == (int)A.size()) {
       if(B[l2] != top)  res.push_back(B[l2]), top = B[l2];
