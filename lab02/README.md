@@ -38,7 +38,16 @@ Q) Given an already sorted vector V and a target variable Z in input, check if t
 
 <details>
   <summary>Solution</summary>
-  NA
+  <code>
+  // Let the vector be V and the target be Z. Assuming V to be sorted.
+  int l = 0;
+  for(int r = (int)V.size() - 1; r >= 0; r--) {
+    while(V[l] + V[r] < z and l + 1 < r)  l++;
+    if(V[l] + V[r]  == z) {
+      cout<<"Found --> "<<V[l]<<" "<<V[r]<<endl;
+    }
+  }
+  </code>
 </details>
 
 Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-pointer style approach. (Will resemble to the merge operation in a merge sort)
@@ -46,12 +55,12 @@ Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-po
 
 <details>
   <summary>Solution</summary>
-  NA
+
 </details>
 
 Q) Sort a collection of names (represented as strings using only 'a' - 'z' without any spaces) first based on ascending length of the names, incase of ties, break the ties by descending order of the names themselves (Ex. {"abc", "ab", "xyz"} in sorted order will be {"ab", "xyz", "abc"})
 
 <details>
   <summary>Solution</summary>
-  NA
+  The broad idea is to make a pair<int, string> where pair.first = -length_of_th_string and pair.second = the string itself, so now we sort a vector of these pairs and then reverse it. An alternate approach is to define your own comparator function.
 </details>

@@ -3,7 +3,6 @@ using namespace std;
 
 int main() {
 	vector<int> A({1, 3, 7, 5, 8});
-	
 	sort(A.begin(), A.end());
 	
 	// Sorted A[] = {1, 3, 5, 7, 8}
