@@ -18,5 +18,5 @@ int main() {
 	set_intersection(A.begin(), A.end(), B.begin(), B.end(), back_inserter(C));
 
 	for(auto v : C)	cout<<v<<" ";
-	cout<<endl;
+  cout<<endl;
 }

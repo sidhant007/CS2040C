@@ -48,6 +48,7 @@ Q) Given an already sorted vector V and a target variable Z in input, check if t
       break;
     }
   }
+  // The broad idea is to have 2 pointers, one on the left most side of the vector and the other on the right most side. Now slowly move the right pointer leftwards, i.e decrement its postion by -1. While you are moving it to the left you will realise that the net sum of A[l] + A[r] would decrease, because A[r] < A[r + 1], so to again up this value close to Z, you move l pointer forward, i.e increment it. 
   </pre>
 </details>
 
@@ -56,7 +57,36 @@ Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-po
 
 <details>
   <summary>Solution</summary>
-
+  <pre>
+  // Assuming I have vector A<> and vector B<> sorted.
+  int l1 = 0, l2 = 0, top = -1;
+  // top denotes the current top value in the res vector. 
+  // I am assuming that both the vectors will NOT contain any -1.
+  // -1 is a sentinel value used to make the code shorter.
+  vector<int> res; //The vector which will have the union result.
+  while(l1 < (int)A.size() or l2 < (int)B.size()) {
+    if(l1 == (int)A.size()) {
+      if(B[l2] != top)  res.push_back(B[l2]), top = B[l2];
+      l2++;
+    }
+    else if(l2 == (int)B.size()) {
+      if(A[l1] != top)  res.push_back(A[l1]), top = A[l1];
+      l1++;
+    }
+    else {
+      if(A[l1] <= B[l2]) {
+        if(A[l1] != top)  res.push_back(A[l1]), top = A[l1];
+        l1++;
+      }
+      else {
+        if(B[l2] != top)  res.push_back(B[l2]), top = B[l2];
+        l2++;
+      }
+    }
+  }
+  for(auto v : res) cout<<v<<" ";
+  cout<<endl;
+  </pre>
 </details>
 
 Q) Sort a collection of names (represented as strings using only 'a' - 'z' without any spaces) first based on ascending length of the names, incase of ties, break the ties by descending order of the names themselves (Ex. {"abc", "ab", "xyz"} in sorted order will be {"ab", "xyz", "abc"})
@@ -65,3 +95,5 @@ Q) Sort a collection of names (represented as strings using only 'a' - 'z' witho
   <summary>Solution</summary>
   The broad idea is to make a pair<int, string> where pair.first = -1 * length_of_the_string and pair.second = the string itself, so now we sort a vector of these pairs and then reverse it. One alternate approach is to define your own comparator function and another alternate approach but slightly complicated is to remap 'a' to 'z' , 'b' to 'y', 'c' to 'x' and so on, now the strings will "kind of look like negated strings", so now you could just sort the entire thing, using +1 * length_of_the_string in pair.first.
 </details>
+
+**Note** - I haven't tested the 2 pseudo-codes for the challenge questions on corner test cases and only verified that they work on simpler ones, in case any one of you find an issue with these codes, do drop me a mail :)
