@@ -19,6 +19,8 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 ## Functions we used - 
   [advance](http://en.cppreference.com/w/cpp/iterator/advance) (Used for moving an iterator in positive / negative direction from its current position)
 
+Take me to [wow](#Q1)
+
 ## Challenge Questions - 
 
 Q) <a name="Q1"></a> NA
