@@ -6,6 +6,7 @@ Below are the links for all the labs.
 
   [Lab 02](https://sidhant007.github.io/CS2040C/lab02)
 
+  [Lab 03](https://sidhant007.github.io/CS2040C/lab03)
 
 
 #### Challenge Question(s)
