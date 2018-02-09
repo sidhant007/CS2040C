@@ -21,7 +21,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 ## Challenge Questions - 
 
-Q) NA
+Q) <a name="Q1"></a> NA
 
 <details>
   <summary>Solution</summary>
