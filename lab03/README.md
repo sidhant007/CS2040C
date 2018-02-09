@@ -16,11 +16,11 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   [SLLStack.cpp](https://sidhant007.github.io/CS2040C/lab03/SLLStack.cpp) (Our own implementation of a stack using SLL (Singly Linked List)) **(Can be useful for PS2 - D)** *(FIX - The function printList cannot be accessed by the class MyStack because the inheritance done is private. When we say class A inherits from class B, in a way as class A : B { // Code } it is equivalent to saying class A : private B { // Code }. In simpler terms, if we drop the word "public"/"private" then by default for classes it is meant to be "private", whereas for "struct" is it meant to "public" by default. Because all the inherited functions are private we cannot access the inherited functions through the main(), i.e out of the scope of MyStack. This fix is primarily for Group 04)*
 
-  ##Apart from all this I would like you all to go through these function below for many different use cases - 
+  ## Apart from all this I would like you all to go through these function below for many different use cases - 
 
   [advance](http://en.cppreference.com/w/cpp/iterator/advance) (Used for moving an iterator in positive / negative direction from its current position)
 
-##Challenge Questions - 
+## Challenge Questions - 
 
 Q) NA
 
