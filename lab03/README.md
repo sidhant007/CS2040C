@@ -21,7 +21,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 ## Challenge Questions - 
 
-Q) <a name="Q1"></a> NA
+Q) <a name="Q1"></a> PS1 Variant - Instead of finding the median, i.e the N/2 th element, can you do the same question for the N/3 rd element. (assume integer division for cases when N is not divisible by 3). So now I am asking you to add all the N/3 rd elements in sorted order and print the sum. 
 
 <details>
   <summary>Solution</summary>
@@ -30,7 +30,9 @@ Q) <a name="Q1"></a> NA
   </pre>
 </details>
 
-Q) NA
+Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional constraint that all integers in array A[] are non-negatie integers not more than 10<sup>5</sup> in just O(N). O(N) means you cannot use priority_queue any more. 
+
+Hint - Use counting sort + something ??
 
 <details>
   <summary>Solution</summary>
