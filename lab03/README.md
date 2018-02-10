@@ -21,7 +21,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 ## Challenge Questions - 
 
-Q) <a name="Q1"></a> PS1 Variant - Instead of finding the median, i.e the N/2 th element, can you do the same question for the N/3 rd element. (assume integer division for cases when N is not divisible by 3). So now I am asking you to add all the N/3 rd elements in sorted order and print the sum. 
+Q) <a name="Q1"></a> PS1 Variant - Instead of finding the median, i.e the N/2 th element, can you do the same question for the N/3 rd element. (assume integer division for cases when N is not divisible by 3). So now I am asking you to add all the N/3 rd elements in sorted order and print the sum. (**Note** - Solve this in O(N*logN) )
 
 <details>
   <summary>Solution</summary>
