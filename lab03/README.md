@@ -30,7 +30,7 @@ Q) <a name="Q1"></a> PS1 Variant - Instead of finding the median, i.e the N/2 th
   </pre>
 </details>
 
-Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional constraint that all integers in array A[] are non-negative integers which are not more than 100000, in just O(N). O(N) means you cannot use priority_queue any more. In simpler terms I have simplfied the constraints since now the value of elements in A[] can be atmost 100000 but at the same time I want you to solve this question in O(N) not O(N*logN)
+Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional constraint that all integers in array A[] are non-negative integers which are not more than 100000, in just O(N). O(N) means you cannot use priority_queue any more. In simpler terms I have simplfied the constraints since now the value of elements in A[] can be atmost 100000 but at the same time I want you to solve this question in O(N) not O(N*logN)(**Note** - In this question stick with the original definition of median, i.e N/2 th element. This question is independent of the question mentioned above)
 
 Hint - Use counting sort + something ??
 
