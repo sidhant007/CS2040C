@@ -26,7 +26,7 @@ Q) <a name="Q1"></a> PS1 Variant - Instead of finding the median, i.e the N/2 th
 <details>
   <summary>Solution</summary>
   Just try to maintain a 1:2 ratio in the 2 priority queues instead of a 1:1 ratio.
-
+  <br>
   (Assuming you know the priority queue solution, if not then please watch <a href = "https://www.youtube.com/watch?v=VmogG01IjYc">this</a> for the first 3 minutes, to get a clear understanding)
 </details>
 
@@ -39,7 +39,7 @@ Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional con
 <details>
   <summary>Solution</summary>
   <a href = "https://sidhant007.github.io/CS2040C/lab03/PS1_harder_variant.cpp">My solution</a>
-
+  <br>
   PS - This solution does not do COUNTING SORT (since I implemented it for PS1 C, where I could not use counting sort since the numbers could be large but apart from the counting sort the remaining logic is O(N))
 </details>
 
