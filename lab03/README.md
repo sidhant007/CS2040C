@@ -38,7 +38,7 @@ Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional con
 
 <details>
   <summary>Solution</summary>
-  <a href = "https://sidhant007.github.io/CS2040C/lab03/PS1_harder_variant.cpp">My solution</a>
+  <a href = "https://sidhant007.github.io/CS2040C/lab03/PS1_harder_variant.cpp">My solution.cpp</a>
   <br>
   PS - This solution does not do COUNTING SORT (since I implemented it for PS1 C, where I could not use counting sort since the numbers could be large but apart from the counting sort the remaining logic is O(N))
   <br> <br> <br>
