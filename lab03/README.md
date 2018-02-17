@@ -65,14 +65,14 @@ Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional con
   Median is 1. <br>
   Sum up all the medians. <br>
   <br>
-  <li>
-  <ul>Now let us define some notation, a "x" denotes an "inactive cell" and a "number" denotes an "active cell". </ul>
-  <ul>Also imaginve a pointer to the median of the sorted_arrays[], i.e initally it is at 3, then stays at 3. Then moves to 2, then statys at 2, the moves to 1 and then stays at 1. </ul>
-  <ul>So if you carefully observe, in the above given method, we are ensured that after the deletion of an element in the sorted array at any given step, the median either remains at the same position, or moves to the next/previous "active cell". </ul>
-  <ul>Do note, that actually moving slowly to the next/previous "active cell" can be slow and result in O(N^2) algorithm, so we need a fast method to quickly jump to the next/previous active cell </ul>
-  <ul>For this I keep to arrays left_of[] and right_of[], here left_of[a] should denote the immediate "active cell" to the left of the indice "a". Initially left_of[a] = a, for all a. Similarly let right_of[a] denote the the immediate "active cell" to the right of the indice "a". Initially right_of[a] = a, for all a. <ul>
-  <ul>Now, </ul>
-  </li>
+  <ul>
+  <li>Now let us define some notation, a "x" denotes an "inactive cell" and a "number" denotes an "active cell". </li>
+  <li>Also imaginve a pointer to the median of the sorted_arrays[], i.e initally it is at 3, then stays at 3. Then moves to 2, then statys at 2, the moves to 1 and then stays at 1. </li>
+  <li>So if you carefully observe, in the above given method, we are ensured that after the deletion of an element in the sorted array at any given step, the median either remains at the same position, or moves to the next/previous "active cell". </li>
+  <li>Do note, that actually moving slowly to the next/previous "active cell" can be slow and result in O(N^2) algorithm, so we need a fast method to quickly jump to the next/previous active cell </li>
+  <li>For this I keep to arrays left_of[] and right_of[], here left_of[a] should denote the immediate "active cell" to the left of the indice "a". Initially left_of[a] = a, for all a. Similarly let right_of[a] denote the the immediate "active cell" to the right of the indice "a". Initially right_of[a] = a, for all a. </li>
+  <li>Now, we will basically constantly maintain these 2 arrays for all the elements, in real time. So whenever we need to move to next / previous "active cell" we would simply look up in this array. The details of this portion are a bit hard to explain so I would recommend you to either go through the code / meet me after a lab to discuss this </li>
+  </ul>
 </details>
 
 Q) NA
