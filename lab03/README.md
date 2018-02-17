@@ -25,9 +25,9 @@ Q) <a name="Q1"></a> PS1 Variant - Instead of finding the median, i.e the N/2 th
 
 <details>
   <summary>Solution</summary>
-  <pre>
-  NA
-  </pre>
+  Just try to maintain a 1:2 ratio in the 2 priority queues instead of a 1:1 ratio.
+
+  (Assuming you know the priority queue solution, if not then please watch [this](https://www.youtube.com/watch?v=VmogG01IjYc) for the first 3 minutes, to get a clear understanding)
 </details>
 
 Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional constraint that all integers in array A[] are non-negative integers which are not more than 100000, in just O(N). O(N) means you cannot use priority_queue any more. In simpler terms I have simplfied the constraints since now the value of elements in A[] can be atmost 100000 but at the same time I want you to solve this question in O(N) not O(N*logN)(**Note** - In this question stick with the original definition of median, i.e N/2 th element. This question is independent of the question mentioned above)
@@ -38,9 +38,9 @@ Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional con
 
 <details>
   <summary>Solution</summary>
-  <pre>
-  NA
-  </pre>
+  [My Solution](https://sidhant007.github.io/CS2040C/lab03/PS1_harder_variant.cpp)
+
+  PS - This solution does not do COUNTING SORT (since I implemented it for PS1 C, where I could not use counting sort since the numbers could be large but apart from the counting sort the remaining logic is O(N))
 </details>
 
 Q) NA
