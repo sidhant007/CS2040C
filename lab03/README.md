@@ -42,7 +42,7 @@ Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional con
   <br>
   PS - This solution does not do COUNTING SORT (since I implemented it for PS1 C, where I could not use counting sort since the numbers could be large but apart from the counting sort the remaining logic is O(N))
   <br>
-  What is the broad idea ?
+  What is the broad idea ? <br>
   <br>
   What I do is first keep the entire array in sorted order. Now I would rephrase the question to iteratively finding the median and removing an element (i.e the latest element) from this array. Example - <br>
   For simplicity in this example, when N = even, we will just say that the median is the leftward element out of the 2 in between <br>
@@ -66,10 +66,14 @@ Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional con
   Median is 1. <br>
   Sum up all the medians. <br>
   <br>
-  Now let us define some notation, a "x" denotes an "inactive cell" and a "number" denotes an "active cell". <br>
-  Also imaginve a pointer to the median of the sorted_arrays[], i.e initally it is at 3, then stays at 3. Then moves to 2, then statys at 2, the moves to 1 and then stays at 1. <br>
-  So if you carefully observe, in the above given method, we are ensured that after the deletion of an element in the sorted array at any given step, the median either remains at the same position, or moves to the next/previous "active cell". <br>
-  Do note, that actually moving slowly to the next/previous "active cell" can be slow and result in O(N^2) algorithm, so we need a fast method to quickly jump to the next/previous active cell <br>
+  <li>
+  <ul>Now let us define some notation, a "x" denotes an "inactive cell" and a "number" denotes an "active cell".
+  <ul>Also imaginve a pointer to the median of the sorted_arrays[], i.e initally it is at 3, then stays at 3. Then moves to 2, then statys at 2, the moves to 1 and then stays at 1.
+  <ul>So if you carefully observe, in the above given method, we are ensured that after the deletion of an element in the sorted array at any given step, the median either remains at the same position, or moves to the next/previous "active cell". <br>
+  <ul>Do note, that actually moving slowly to the next/previous "active cell" can be slow and result in O(N^2) algorithm, so we need a fast method to quickly jump to the next/previous active cell
+  <ul>For this I keep to arrays left_of[] and right_of[], here left_of[a] should denote the immediate "active cell" to the left of the indice "a". Initially left_of[a] = a, for all a. Similarly let right_of[a] denote the the immediate "active cell" to the right of the indice "a". Initially right_of[a] = a, for all a. <br>
+  <ul>Now, 
+  </li>
 </details>
 
 Q) NA
