@@ -43,27 +43,30 @@ Q) <a name="Q2"></a> PS1 Final version - Solve PS1 C but with the additional con
   PS - This solution does not do COUNTING SORT (since I implemented it for PS1 C, where I could not use counting sort since the numbers could be large but apart from the counting sort the remaining logic is O(N))
   <br> <br> <br>
   What is the broad idea ? <br> <br> <br>
-  What I do is first keep the entire array in sorted order. Now I would rephrase the question to iteratively finding the median and removing an element (i.e the latest element) from this array. Example - <br>
-  For simplicity in this example, when N = even, we will just say that the median is the leftward element out of the 2 in between <br>
-  N = 6, array = [1, 3, 2, 5, 7, 4] <br>
-  sorted_array = [1, 2, 3, 4, 5, 7] <br>
-  My algo in outline - <br>
-  Find median, i.e 3 <br>
-  Now remove 4 (because in original array it was the last element) <br>
-  So sorted_array' = [1, 2, 3, x, 5, 7] (Here x denotes a deleted element) <br>
-  Again find median for this array, i.e = 3 <br>
-  Now remove 7 (second last element in original array) <br>
-  So sorted_array'' = [1, 2, 3, x, 5, x] <br>
-  Now median is =  2 <br>
-  Now remove 5 <br>
-  So array is [1, 2, 3, x, x, x] <br>
-  Median becomes 2. <br>
-  Now remove 2 <br>
-  Array becomes [1, x, 3, x, x, x] <br>
-  Median is 1 <br>
-  Array becomes [1, x, x, x, x, x] <br>
-  Median is 1. <br>
-  Sum up all the medians. <br>
+  What I do is first keep the entire array in sorted order. Now I would rephrase the question to iteratively finding the median and removing an element (i.e the latest element) from this array.<br><br> 
+  Example - <br>
+  <ul>
+  <li>For simplicity in this example, when N = even, we will just say that the median is the leftward element out of the 2 in between </li>
+  <li>N = 6, array = [1, 3, 2, 5, 7, 4] </li>
+  <li>sorted_array = [1, 2, 3, 4, 5, 7] </li>
+  <li>My algo in outline - </li>
+  <li>Find median, i.e 3 </li>
+  <li>Now remove 4 (because in original array it was the last element) </li>
+  <li>So sorted_array' = [1, 2, 3, x, 5, 7] (Here x denotes a deleted element) </li>
+  <li>Again find median for this array, i.e = 3 </li>
+  <li>Now remove 7 (second last element in original array) </li>
+  <li>So sorted_array'' = [1, 2, 3, x, 5, x] </li>
+  <li>Now median is =  2 </li>
+  <li>Now remove 5 </li>
+  <li>So array is [1, 2, 3, x, x, x] </li>
+  <li>Median becomes 2. </li>
+  <li>Now remove 2 </li>
+  <li>Array becomes [1, x, 3, x, x, x] </li>
+  <li>Median is 1 </li>
+  <li>Array becomes [1, x, x, x, x, x] </li>
+  <li>Median is 1. </li>
+  <li>Sum up all the medians. </li>
+  </ul>
   <br>
   <ul>
   <li>Now let us define some notation, a "x" denotes an "inactive cell" and a "number" denotes an "active cell". </li>
