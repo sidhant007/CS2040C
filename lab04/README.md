@@ -22,8 +22,9 @@ Q) For PS2 D, try to code your priority queue using pointers instead of using an
 
 Q) Given an array of N integers, find the Kth smallest element in time complexity O(N + KlogN) ?
 
-**Hint - Sorting will not work**
-**Hint - I do not want a randomised solution, so do not think along the lines of nth_element algorithm of C++ library**
+(Note - Sorting will not work) 
+
+(Note - We do not want a randomised solution, so do not think along the lines of n_th element function in the C++ library)
 
 <details>
   <summary>Solution</summary>
