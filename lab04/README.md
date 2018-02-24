@@ -13,16 +13,21 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 ## Challenge Questions - 
 
-Q) NA
+Q) For PS2 D, try to code your priority queue using pointers instead of using an array based approach.
 
 <details>
   <summary>Solution</summary>
+  TBA
 </details>
 
-Q) NA
+Q) Given an array of N integers, find the Kth smallest element in time complexity O(N + KlogN) ?
+
+**Hint - Sorting will not work**
+**Hint - I do not want a randomised solution, so do not think along the lines of nth_element algorithm of C++ library**
 
 <details>
   <summary>Solution</summary>
+  TBA
 </details>
 
 Q) NA
