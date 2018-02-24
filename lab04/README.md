@@ -7,9 +7,9 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
   [content.pdf](https://sidhant007.github.io/CS2040C/lab04/content.pdf) (The pdf version of the ppt shown) 
 
 
-  [STLPriorityQueue.cpp](https://sidhant007.github.io/CS2040C/lab04/STLPriorityQueue.cpp) (The STL Deque implementation)
+  [STLPriorityQueue.cpp](https://sidhant007.github.io/CS2040C/lab04/STLPriorityQueue.cpp) (The STL Priority Queue implementation)
 
-  [UVa 1203.cpp](https://sidhant007.github.io/CS2040C/lab04/UVa1203.cpp) (The solution code for the problem discussed in the lab involving Priority Queue)
+  [UVa 1203.cpp](https://sidhant007.github.io/CS2040C/lab04/UVa1203.cpp) (The solution code for the problem <a href = "https://uva.onlinejudge.org/external/12/1203.pdf">Uva 1203</a> discussed in the lab which involves the use of Priority Queue)
 
 ## Challenge Questions - 
 
