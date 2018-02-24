@@ -8,10 +8,9 @@ Below are the links for all the labs.
 
   [Lab 03](https://sidhant007.github.io/CS2040C/lab03)
 
+  [Lab 04](https://sidhant007.github.io/CS2040C/lab04)
 
 #### Challenge Question(s)
 I will try to give out **Challenge Question(s)** for most of the labs.
 **These questions are given from my side (not the prof) they may / may not be relevant to the exam**
 **Do try them out, if you have enough time and find the module interesting**
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/)
