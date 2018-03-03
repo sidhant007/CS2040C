@@ -37,7 +37,7 @@ Or you can try to calculate the time complexity for a  more generic version of a
 
 <details>
   <summary>Solution</summary>
-  NA
+  TBA
 </details>
 
 Q) A kattis like question - 
@@ -56,5 +56,5 @@ Also do note, that if you implement this naively in C++, you will experience ove
 
 <details>
   <summary>Solution</summary>
-  NA
+  TBA
 </details>
