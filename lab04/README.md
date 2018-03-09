@@ -15,8 +15,6 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 Q) For PS2 D, try to code your priority queue using pointers instead of using an array based approach.
 
-<sub>testing</sub> subscript
-
 <details>
   <summary>Solution</summary>
   TBA
@@ -70,7 +68,7 @@ Q) Given an array of N integers, find the Kth smallest element in time complexit
   <br><br>
   So now, we have proven Claim 1 and understand why the heap will result to be sorted after Step 2. But what about the time complexity. 
   <br><br>
-  Well carefully observe, let the depth of the tree be called as "h" = log<sub>2</sub>(N), then - 
+  Well carefully observe, let the depth of the tree be called as "h" = log2(N), then - 
   <br>
   The number of nodes at height h are N/2.
   <br>
@@ -115,9 +113,9 @@ Or you can try to calculate the time complexity for a  more generic version of a
 
 <details>
   <summary>Solution</summary>
-  So the shiftDown in a ternary heap is O(2 * log<sub>3</sub>N) and shiftUp is O(log<sub>3</sub>N)
+  So the shiftDown in a ternary heap is O(2 * log3(N)) and shiftUp is O(log3(N))
   <br><br>
-  For a more generic "k-ary heap" shiftDown is O((k - 1) * log<sub>k</sub>N) and shift up is O(log<sub>k</sub>N).
+  For a more generic "k-ary heap" shiftDown is O((k - 1) * logk(N)) and shift up is O(logk(N)). Here logk(N) means log(N) with base k. Dont know why but subscript is not working on github markdown.
   <br><br>
   We can observe that shiftUp is cheaper in a k-ary heap, where k >= 2, than a binary heap, but shiftDown is more expensive.
   <br><br>
