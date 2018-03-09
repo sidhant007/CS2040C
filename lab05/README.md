@@ -6,9 +6,10 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   [content.pdf](https://sidhant007.github.io/CS2040C/lab05/content.pdf) (The pdf version of the ppt shown) 
 
-  [BinaryHeapDemo.cpp](https://sidhant007.github.io/CS2040C/lab05/BinaryHeapDemo.cpp) (The Binary Heap Demo implementation)
+  [BinaryHeapDemo.cpp](https://sidhant007.github.io/CS2040C/lab05/BinaryHeapDemo.cpp) (The Binary Heap demo implementation)
 
-  [unordered_map.cpp](https://sidhant007.github.io/CS2040C/lab05/unordered_map.cpp) 
+  [unordered_map.cpp](https://sidhant007.github.io/CS2040C/lab05/unordered_map.cpp) (The unordered_map demo code)
+
   [KattisCD_using_unordered_set.cpp](https://sidhant007.github.io/CS2040C/lab05/KattisCD_using_unordered_set.cpp) (The solution code for the problem <a href = "https://open.kattis.com/problems/cd">Kattis CD</a> discussed in the lab which involves the use of unordered_set)
 
   [KattisCD_using_2_ptr.cpp](https://sidhant007.github.io/CS2040C/lab05/KattisCD_using_2_ptr.cpp) (Same problem, different approach. Now done using 2 pointer method)
