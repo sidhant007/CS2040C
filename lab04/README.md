@@ -44,20 +44,21 @@ Q) Given an array of N integers, find the Kth smallest element in time complexit
   <br>
   The step 2 is the essence of the build. First let us make this claim - 
   <br>
-  ## Claim 1 - 
+  <h3>Claim 1 - </h3>
+  <br>
   Given a subtree of heap with the root of the subtree as node "a" and it has two children, left child named as "b", right child named as "c". Let val[a], val[b], val[c] denote the values at the indices a, b and c respectively.
-  <br> 
+  <br><br>
   Then if b and c are valid subtree heaps, i.e within the subtrees of "b" and "c" the properties of heap are satified. Then this subtree of "a" will also be a valid heap, given we do a single shiftDown(a) operation. 
   <br><br>
   Proof - 
   <br>
-  Case 1 - When val[a] \leq max(val[b], val[c])
+  Case 1 - When val[a] &le; min(val[b], val[c]) (Note we are making a min Heap)
   <br>
   The subtree heap of "a" is already valid, so shiftDown(a) does nothing.
   <br><br>
-  Case 2 - When val[a] \geq max(val[b], val[c])
+  Case 2 - When val[a] &gt; min(val[b], val[c])
   <br>
-  Arbitrarily assume, that val[b] > val[c]
+  Arbitrarily assume, that val[b] &le; val[c]
   <br><br> 
   Then "a" will be swapped with "b" during the shiftDown(a) operation. And the shiftDown(a) operation will recursively call the same operation for shiftDown(b), but now do notice that after the swap, value[b] = value[a].
   <br>
