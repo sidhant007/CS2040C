@@ -44,10 +44,9 @@ Q) Given an array of N integers, find the Kth smallest element in time complexit
   <br>
   The step 2 is the essence of the build. First let us make this claim - 
   <br>
-  <h3>Claim 1 - </h3>
-  <br>
+  <h5>Claim 1 - </h5>
   Given a subtree of heap with the root of the subtree as node "a" and it has two children, left child named as "b", right child named as "c". Let val[a], val[b], val[c] denote the values at the indices a, b and c respectively.
-  <br><br>
+  <br>
   Then if b and c are valid subtree heaps, i.e within the subtrees of "b" and "c" the properties of heap are satified. Then this subtree of "a" will also be a valid heap, given we do a single shiftDown(a) operation. 
   <br><br>
   Proof - 
@@ -65,7 +64,7 @@ Q) Given an array of N integers, find the Kth smallest element in time complexit
   So in this scenario we are ensured that the "a" would become a valid subtree heap provided "b" becomes a valid subtree heap. This is basically solving the same problem again, but for a smaller subtree. This will true, using PMI(Principal of Mathematical Induction) on this claim. 
   <br><br>
   So now, we have proven Claim 1 and understand why the heap will result to be sorted after Step 2. But what about the time complexity. 
-  <br>
+  <br><br>
   Well carefully observe, let the depth of the tree be called as "h" = log <sub>2</sub>(N), then - 
   <br>
   The number of nodes at height h are N/2.
