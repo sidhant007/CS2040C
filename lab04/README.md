@@ -122,6 +122,8 @@ Or you can try to calculate the time complexity for a  more generic version of a
   We can observe that shiftUp is cheaper in a k-ary heap, where k >= 2, than a binary heap, but shiftDown is more expensive.
   <br><br>
   So it would be better in scenarios where you do a lot of shiftUp and very few shiftDown. Example - There are a lot of insert operations (requiring shiftUp) and very few pop operations (requiring shiftDown).
+
+  You can read more about this <a href = "https://en.wikipedia.org/wiki/D-ary_heap">here (wikipedia)</a>
 </details>
 
 Q) A kattis like question - 
