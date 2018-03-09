@@ -16,7 +16,9 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 ## Challenge Questions - 
 
-Q) Given a node x of a binary heap, it must have a sibling right, i.e if y is the parent of x. Then y has 2 children x and z. So x is a sibling of z. Now assume that you are given a heap such that each node has a sibling except the root node, i.e it is a complete binary heap. Also assume that the notation used in our approach of heap is the same as shown in the demo code, i.e parent of indice "i" has indice "i/2". Similarly left child of indice "i" is "2 * i" and right child is "2 * i + 1". You have to write the function bool amIOlder(int x) which takes in one argument i.e and returns true if val[x] > val[sibling(x)] otherwise returns false. Here val[] refers to the values in the heap. 
+Q) Given a node x of a binary heap, it must have a sibling right, i.e if y is the parent of x. Then y has 2 children x and z. So x is a sibling of z. Now assume that you are given a heap such that each node has a sibling except the root node, i.e it is a complete binary heap. Also assume that the notation used in our approach of heap is the same as shown in the demo code, i.e parent of indice "i" has indice "i/2". Similarly left child of indice "i" is "2 * i" and right child is "2 * i + 1". You have to write the function bool amIOlder(int x) which takes in one argument x and returns true if val[x] > val[sibling(x)], where sibling(x) = z, in the definition above, otherwise it returns false. Here val[] refers to the values in the heap. 
+
+So the question in literal sense wants you to tell whether x is the bigger sibling or z is the bigger one.
 
 NOTE - The solution is straightforward if you are allowed to use everything, so we have the restriction, i.e you can have only one statement inside the function and you are not allowed to use GOTO/IF/WHILE/FOR or any other kind of looping structure.
 
