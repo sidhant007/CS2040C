@@ -15,7 +15,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 Q) For PS2 D, try to code your priority queue using pointers instead of using an array based approach.
 
-<sub>testing></sub> subscript
+<sub>testing</sub> subscript
 
 <details>
   <summary>Solution</summary>
