@@ -31,7 +31,10 @@ Q) Given an array of N integers, find the Kth smallest element in time complexit
 <details>
   <summary>Solution</summary>
   <br>
-  Make your own min binary heap / priority queue using the demo code shown in Lab05. <br><br>
+  Make your own min binary heap / priority queue using the demo code shown in Lab05in O(N). Then pop the first K - 1 elements and print the top obtained after the pops in O(KlogN). So total is O(N + KlogN). <br><br>
+  <br>
+  But how do you make the heap in O(N) ?
+  <br><br>
   You would need to build the heap in O(N), which is done by inserting the elements in a weird fashion.
   <br><br>
   Step 1 - Take the unsorted array and put them into the binary heap in any arbitrary order.
