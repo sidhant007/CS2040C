@@ -139,5 +139,5 @@ Also do note, that if you implement this naively in C++, you will experience ove
 
 <details>
   <summary>Solution</summary>
-  TBA
+  I will give out the entire details sometime soon. The key idea was to use log(X) instead of X and use a binary heap aka priority queue. The idea has been ripped of from <a href = "http://wcipeg.com/problem/ioi1521">IOI Horses 2015</a>. If you are feeling adventurous, then do give it a try. It would require knowledge of BBST / Segment Tree though.
 </details>
