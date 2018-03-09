@@ -65,7 +65,7 @@ Q) Given an array of N integers, find the Kth smallest element in time complexit
   <br><br>
   So now, we have proven Claim 1 and understand why the heap will result to be sorted after Step 2. But what about the time complexity. 
   <br><br>
-  Well carefully observe, let the depth of the tree be called as "h" = log <sub>2</sub>(N), then - 
+  Well carefully observe, let the depth of the tree be called as "h" = log<sub>2</sub>(N), then - 
   <br>
   The number of nodes at height h are N/2.
   <br>
@@ -110,8 +110,14 @@ Or you can try to calculate the time complexity for a  more generic version of a
 
 <details>
   <summary>Solution</summary>
-  TBA
-</details>
+  So the shiftDown in a ternary heap is O(2 * log<sub>3</sub>N) and shiftUp is O(log<sub>3</sub>N)
+  <br><br>
+  For a more generic "k-ary heap" shiftDown is O((k - 1) * log<sub>k</sub>N) and shift up is O(log<sub>k</sub>N).
+  <br><br>
+  We can observe that shiftUp is cheaper than a binary tree, but shiftDown is more expensive.
+  <br><br>
+  So it would be better in scenarios where you do a lot of shiftUp and very few shiftDown. Example - There are a lot of insert operations (requiring shiftUp) and very few pop operations (requiring shiftDown).
+<details>
 
 Q) A kattis like question - 
 
