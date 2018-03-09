@@ -10,6 +10,8 @@ Below are the links for all the labs.
 
   [Lab 04](https://sidhant007.github.io/CS2040C/lab04)
 
+  [Lab 05](https://sidhant007.github.io/CS2040C/lab05)
+
 #### Challenge Question(s)
 I will try to give out **Challenge Question(s)** for most of the labs.
 **These questions are given from my side (not the prof) they may / may not be relevant to the exam**
