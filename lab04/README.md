@@ -114,7 +114,7 @@ Or you can try to calculate the time complexity for a  more generic version of a
   <br><br>
   For a more generic "k-ary heap" shiftDown is O((k - 1) * log<sub>k</sub>N) and shift up is O(log<sub>k</sub>N).
   <br><br>
-  We can observe that shiftUp is cheaper than a binary tree, but shiftDown is more expensive.
+  We can observe that shiftUp is cheaper in a k-ary heap, where k >= 2, than a binary heap, but shiftDown is more expensive.
   <br><br>
   So it would be better in scenarios where you do a lot of shiftUp and very few shiftDown. Example - There are a lot of insert operations (requiring shiftUp) and very few pop operations (requiring shiftDown).
 </details>
