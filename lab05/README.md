@@ -20,7 +20,7 @@ Q) Given a node x of a binary heap, it must have a sibling right, i.e if y is th
 
 So the question in literal sense wants you to tell whether x is the bigger sibling or z is the bigger one.
 
-NOTE - The solution is straightforward if you are allowed to use everything, so we have the restriction, i.e you can have only one statement inside the function and you are not allowed to use GOTO/IF/WHILE/FOR or any other kind of looping structure.
+NOTE - The solution is straightforward if you are allowed to use everything, so we have the restriction, i.e you can have only one statement inside the function and you are not allowed to use GOTO/IF/TERNARY OPERATOR(a ? b -> x : y)/SWITCH/WHILE/FOR or any other kind of looping/if-else structure.
 
 Example of an incorrect implementation of the function would be - 
 ~~~~
