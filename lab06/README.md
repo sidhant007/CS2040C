@@ -4,7 +4,7 @@
 
 Here is a pdf version of the ppt I covered during the lab. And the codes that I (skimmed through) / (demonstrated live).
 
-  [content.pdf](https://sidhant007.github.io/CS2040C/lab05/content.pdf) (The pdf version of the ppt shown) 
+  [content.pdf](https://sidhant007.github.io/CS2040C/lab06/content.pdf) (The pdf version of the ppt shown) 
 
   [map.cpp](https://sidhant007.github.io/CS2040C/lab06/map.cpp) (The map demo code)
 
