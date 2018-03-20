@@ -17,7 +17,7 @@ Q) For PS2 D, try to code your priority queue using pointers instead of using an
 
 <details>
   <summary>Solution</summary>
-  TBA
+  Refer to the AVL implementation of the prof and try to modify it :)
 </details>
 
 Q) Given an array of N integers, find the Kth smallest element in time complexity O(N + KlogN) ?
@@ -143,4 +143,16 @@ Also do note, that if you implement this naively in C++, you will experience ove
 <details>
   <summary>Solution</summary>
   I will give out the entire details sometime soon. The key idea was to use log(X) instead of X and use a binary heap aka priority queue. The idea has been ripped of from <a href = "http://wcipeg.com/problem/ioi1521">IOI Horses 2015</a>. If you are feeling adventurous, then do give it a try. It would require knowledge of BBST / Segment Tree though.
+  <br><br>
+  The exact solution - 
+  <br>
+  Maintain a max heap and instead of putting all the values normally, put the logarithm of all the values. (You need to use the log values instead of normal ones, because normal ones would overflow if stored in an int / long long. And if you used double then their would be precision issues)
+  <br>
+  Now for type 1 operation instead of doing largest = largest * x, we will do log(largest) = log(largest * x), which is using properties of log equivalent to log(largest) = log(largest) + log(x). Do note here I am using natural log with base e, for convienience. You can do choose to use a different base.
+  <br>
+  Now for type 2, do similar thing but instead of adding log(x) just subtract log(x), because log(largest / x) is equivalent to log(largest) - log(x).
+  <br>
+  Finally for type 3, take the largest, let it be a. Pop the largest and again take the largest, i.e actually the second largest. Let it be b. Now you need to check if a > 2*b. Take log on both sides, so you need to tell if log(a) > log(2 * b) which is equal to log(a) > log(2) + log(b). This comparison can be done easily, because log(2) is simply a constant. That is it. 
+  <br>
+  This was the idea of the solution in broad terms :)
 </details>

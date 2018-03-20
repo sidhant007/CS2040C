@@ -33,18 +33,5 @@ bool amIOlder(int x) {
 
 <details>
   <summary>Solution</summary>
-  
-</details>
-
-Q) NA 
-<details>
-  <summary>Solution</summary>
-  TBA
-</details>
-
-Q) NA
-
-<details>
-  <summary>Solution</summary>
-  TBA
+  The answer is just return x^1, where ^ is the xor operator. Observe that when x is even, it will just make it x + 1, and when x is odd it will make it x - 1. It is a handy trick on many codes that you would write where you make a heap / segment tree / any other static binary strucutre using an array since this is pretty fast on the compiler level and good optimisation to know of. 
 </details>
