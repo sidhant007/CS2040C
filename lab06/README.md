@@ -14,7 +14,9 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 ## Challenge Questions - 
 
-Q) NA
+Q) Try to the Kattis Compound Words question using O(N) memory. Assume that all the strings are of small length and therefore the length of the strings does not affect the memory analysis. Our original approach in the lab was putting O(N^2) strings in a set, which therefore requires O(N^2) memory. Now I want you to restrict the usage of at most O(N) memory and still print out all the N^2 strings. Do note that you would still be printing N^2 strings, which does not mean usage of N^2 memory. 
+
+Hint - Try to generate all the strings in a systematic manner such that you get them in sorted order. Use a heap / priority_queue.
 
 ~~~~
 NA
@@ -22,5 +24,5 @@ NA
 
 <details>
   <summary>Solution</summary>
-  NA
+  TBA (To Be Announced)
 </details>
