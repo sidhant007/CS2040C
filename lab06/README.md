@@ -38,7 +38,7 @@ Hint - Try to generate all the strings in a systematic manner such that you get 
   <br>
   Keep on doing this. Do note, that x &ne; y + 1, when pushing s(x) + s(y + 1).
   <br>
-  Also note that the in pq each element should essentially be a tuple<string, int, int> where if get<1> = a, get<2> = b, then get<0> = s(a) + s(b).
+  Also note that the in pq each element should essentially be a tuple<string, int, int> where get<1> = a, get<2> = b, get<0> = s(a) + s(b).
   <br>
   The intutive idea of the algo was to first take the min term out of all the first terms in equation 1, equation 2, ... equation n. Then for that particular equation which gave the min term, move to the second term for that equation. And again take the minimum. So keep on taking the minimum term, and shifting the pointer for the equation which gives the mininum term by 1 position to the right.
   <br>
