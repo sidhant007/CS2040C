@@ -18,10 +18,6 @@ Q) Try to the Kattis Compound Words question using O(N) memory. Assume that all 
 
 Hint - Try to generate all the strings in a systematic manner such that you get them in sorted order. Use a heap / priority_queue.
 
-~~~~
-NA
-~~~~
-
 <details>
   <summary>Solution</summary>
   The solution idea is this - 
@@ -40,11 +36,11 @@ NA
   <br>
   Now pick the top element of pq, print it. Pop it. Then let us say this element which has printed just now is s(x) + s(y), then because you popped s(x) + s(y), you should push in s(x) + s(y + 1) inside the pq. Here I assume s(x) = x_th string.
   <br>
-  Keep on doing this. Do note, that s(x) &ne; s(y + 1), when pushing s(x) + s(y + 1).
+  Keep on doing this. Do note, that x &ne; y + 1, when pushing s(x) + s(y + 1).
   <br>
   Also note that the in pq each element should essentially be a tuple<string, int, int> where if get<1> = a, get<2> = b, then get<0> = s(a) + s(b).
   <br>
-  The intutive idea of the algo was to first take the min term out of all the first terms in equation 1, equation 2, ... equation n. Then for that particular equation which gave the min term, move to the second term for that equation. And again take the minimum. So keep on taking the minimum term, and shifting the pointer for the equation which gives the minimum by 1 to the right.
+  The intutive idea of the algo was to first take the min term out of all the first terms in equation 1, equation 2, ... equation n. Then for that particular equation which gave the min term, move to the second term for that equation. And again take the minimum. So keep on taking the minimum term, and shifting the pointer for the equation which gives the mininum term by 1 position to the right.
   <br>
   Net time complexity is O(c * N * N * log(N)), where c is the average length of the characters. And the memory complexity is O(c * N) = O(N), when c is small enough to be ignored.
 </details>
