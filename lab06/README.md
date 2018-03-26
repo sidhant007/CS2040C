@@ -40,7 +40,7 @@ NA
   <br>
   Now pick the top element of pq, print it. Pop it. Then let us say this element which has printed just now is s(x) + s(y), then because you popped s(x) + s(y), you should push in s(x) + s(y + 1) inside the pq. Here I assume s(x) = x_th string.
   <br>
-  Keep on doing this. Do note, that s(x) &neq; s(y + 1), when pushing s(x) + s(y + 1).
+  Keep on doing this. Do note, that s(x) &ne; s(y + 1), when pushing s(x) + s(y + 1).
   <br>
   Also note that the in pq each element should essentially be a tuple<string, int, int> where if get<1> = a, get<2> = b, then get<0> = s(a) + s(b).
   <br>
