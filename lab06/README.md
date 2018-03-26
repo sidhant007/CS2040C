@@ -42,5 +42,5 @@ Hint - Try to generate all the strings in a systematic manner such that you get 
   <br>
   The intutive idea of the algo was to first take the min term out of all the first terms in equation 1, equation 2, ... equation n. Then for that particular equation which gave the min term, move to the second term for that equation. And again take the minimum. So keep on taking the minimum term, and shifting the pointer for the equation which gives the mininum term by 1 position to the right.
   <br>
-  Net time complexity is O(c * N * N * log(N)), where c is the average length of the characters. And the memory complexity is O(c * N) = O(N), when c is small enough to be ignored.
+  Net time complexity is O(c * N * N * log(N)), where c is the average length of the strings. And the memory complexity is O(c * N) = O(N), when c is small enough to be ignored.
 </details>
