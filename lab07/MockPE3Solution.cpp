@@ -1,5 +1,3 @@
-// https://repl.it/@sidhant007/lab04
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,10 +9,8 @@ int main() {
   int n, q, v;
   cin>>n; 
   for(int i = 1; i <= n; i++) {
-    //cin>>A[i];
     cin>>v;
     S.insert(v);
-    // To do.
   }
   cin>>q;
   while(q--) {
@@ -29,8 +25,8 @@ int main() {
         S.erase(it);
       }
     } else {
+      // cout(*(S.end()) - *(S.begin()))<<endl;
       cout<<(*(S.rbegin()) - *(S.begin()))<<endl;
     }
-    // To do.
   }
 }
