@@ -18,7 +18,7 @@ A better descrption of the problem can be seen from [here](https://en.wikipedia.
 
 Example - 
 a = 3, b = 5, c = 8, d = 2
-Answer = 4 (Fill b. Then tranfer from b to a. Then throw a. Then again tranfer from b to a)
+Answer = 4 (Fill b. Then tranfer from b to a. Then empty a. Then again tranfer from b to a)
 
 Hint - This question should have a pure mathematical approach (probably, although I don't know the method for 3 jugs). The approach I am expecting is based on graph theory. Note, you would need to be know about bfs and dfs before trying this question.
 
