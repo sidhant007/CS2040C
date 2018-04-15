@@ -33,5 +33,10 @@ NA
 
 <details>
   <summary>Solution</summary>
-  TBA
+  The solution is basically model a graph having (a + 1) * (b + 1) * (c + 1) nodes, where each node looks like - <br>
+  (x, y, z), i.e there is x liters of water in the first jug of capacity a, there is y litres of water in second jug of capacity b and z litres of water in third jug of capacity c. <br>
+  Now add directed edges from (x1, y1, z1) and (x2, y2, z2) if you can move from the state (x1, y1, z1) to state (x2, y2, z2) in one step. <br><br>
+  Now the question is reduced to finding the shortest path from (0, 0, 0) to (d, 0, 0). This can be done using a BFS / Djikstra. Note that if no path exists then the answer is -1. <br><br>
+  The time complexity of BFS approach would be O(V + E), where V is the number of vertices and E is the number of edges. In this question V = (a + 1) * (b + 1) * (c + 1) and each node roughly has 12 outgoing edges (can be seen by considering all possible transfers/fills/empty kind of varations which cost 1 step). <br><br>
+  So O(V + E) = O(V + 12*V) = O(13 * V) = O(13 * 50 * 50 * 50) 
 </details>
