@@ -1,5 +1,7 @@
 ## Welcome to CS20404C
 
+  [Feedback form](https://docs.google.com/forms/d/e/1FAIpQLScLeIezAu3Bueokx98FzaNraoK_90lxMd6trBRnnNLXKQjojg/viewform?usp=sf_link) (Please fill this form, to give feedback about the entire experience) (I abide by the NUS Data Information Regulations and will ensure that the data received stays anonymous and and will not be shared with any 3rd party)
+
 Below are the links for all the labs.
 
   [Lab 01](https://sidhant007.github.io/CS2040C/lab01)
