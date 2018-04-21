@@ -18,6 +18,10 @@ Below are the links for all the labs.
 
   [Lab 08](https://sidhant007.github.io/CS2040C/lab08)
 
+  Lab 09 (Consisted of VisuAlgo Online Quiz)
+
+  [Lab 10](https://sidhant007.github.io/CS2040C/lab10)
+
 #### Challenge Question(s)
 I will try to give out **Challenge Question(s)** for most of the labs.
 **These questions are given from my side (not the prof) they may / may not be relevant to the exam**
