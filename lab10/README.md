@@ -12,12 +12,50 @@ Q1) Given a directed weighted graph, find the length of the shortest path in thi
 (Easy version - O(V^3) or O(V * VE)) <br>
 (Hard version - O(VE)) (Hint - Add something in this graph first) <br>
 
+<details>
+  <summary>Solution</summary>
+  Add a dummy source and add 0 weighted edges from this source to all the nodes of the graph. Now run a bellman-ford from this source and find the shortest path to every other node. Print the shortest path found. Well, this is NOT completely correct, why ?? Because if the graph had only positive weighted edges, then this algorithm would give you the answer 0, whereas actually it would be the smallest edge weight. So that is the only corner case. If the graph only has non-negative weighted edges, then print the smallest edge weight, otherwise run the bellman ford from the dummy source and print the shortest path you find from the dummy source to any of the given nodes.
+  Proof of correctness - You can prove by contradiction. Let us assume there was a path where d(u, v) is less than d(dummy_source, v). Now notice that d(dummy_source, v) must be less than or equal to d(dummy_source, u) + d(u, v) because from dummy_source to u we have an edge weight of 0. QED. The reverse condition, that is the the shortest path we did found indeed existed in the graph is intuitively correct. It is only wrong when we don't pick any path i.e we just take an edge from dummy_node to another node and get the cost to be 0. But we handled this by checking all the edges. O(VE) Complexity of the net algo.
+</details>
+
 Q2) Given a undirected weighted tree, i.e each edge of the tree has a weight on it. Do note that all the edge weights in this tree are POSITIVE only. Determine the longest path in this tree. <br>
 (Easy version - O(V^3)) <br>
 (Medium version - O(V^2)) <br>
 (Hard version - O(V)) (Hint - Do 2 DFS) <br>
 
+<details>
+  <summary>Solution</summary>
+  Let node 1 be the root of the tree (picked arbitrarily). Now do a dfs/bdfs from this node and find the farthest node from this node. It is similar to PS5 A. Now let this farthest node from node 1 be u. Now do another dfs/bfs but this time, let the root be u and again find the farthest node. Let this fathest node be v. Then this distance from u to v is the longest path in this tree. This is formally known as the diameter of the tree. 
+  Proof of correctness - https://stackoverflow.com/questions/20010472/proof-of-correctness-algorithm-for-diameter-of-a-tree-in-graph-theory
+  O(V) complexity for doing 2 dfs/bfs on a tree.
+</details>
+
 Q3) Given an undirected weighted graph count the number of shortest paths from a given source to a given destination. Assume all the edge weights to be positive. Let us assume that the lenght of the shortest path from source to destination is x. Then what I need you to find is the total number of different routes from source to destination which we can take such that all of them take exactly x distance to reach. Do note, that you can assume that this total number of different routes can be fit into an integer of size 63 bit. Here 2 routes are considered different if they atleast differ in one of the edges they take in their path. <br>
 This is a relatively harder question. <br>
 (Hint - Use Djikstra only, but somethings are modified) <br>
 (Hint - Can use Floyd Warshall also, but it will be slower) <br>
+
+<details>
+  <summary>Solution</summary>
+  Modify the original djikstra a bit. Now maintain another named count[]. Here count[u] will now denote the number of shortest paths from source to u. So our answer would be count[v]. Now how do we calculate this. Explaining is hard so I am showing the pseudocode.
+Let dist[u] denote the shortest path from source to u, in the below pseudocode.
+~~~~
+  count[src] = 1
+  dist[src] = 0
+  PQ.insert((src, 0)) // here (src, 0) = (node, distance)
+  // Here PQ.top gives the smallest element according to distance and incase of tie, arbitrarily.
+  while PQ is NOT empty
+    Let (u, distance, parent) = PQ.top
+    PQ.pop
+    if distance > dist[u] then continue
+    otherwise 
+      for all outgoing edge from u, let it be (v, w) // here (v, w) = (outgoing node, weight of the edge)
+        if dist[v] > dist[u] + w then
+          PQ.insert((v, dist[v]))
+          dist[v] = dist[u] + w
+          count[v] = count[u] // !!Important
+        else if dist[v] == dist[v] + w then
+          count[v] += count[u] // !!Important
+  print count[destination] 
+~~~~
+</details>
