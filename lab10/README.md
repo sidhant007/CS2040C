@@ -51,7 +51,7 @@ SPOILERS AHEAD
 <details>
   <summary>Solution</summary>
   Modify the original djikstra a bit. Now maintain another named count[]. Here count[u] will now denote the number of shortest paths from source to u. So our answer would be count[v]. Now how do we calculate this. Explaining is hard so I am showing the pseudocode.
-Let dist[u] denote the shortest path from source to u, in the below pseudocode.
+Let dist[u] denote the shortest path from source to u, in the below pseudocode and let vis[u] denote if node u has been processed or not.
 </details>
 ~~~~
   count[src] = 1
@@ -61,8 +61,9 @@ Let dist[u] denote the shortest path from source to u, in the below pseudocode.
   while PQ is NOT empty
     Let (u, distance) = PQ.top
     PQ.pop
-    if distance > dist[u] then continue
+    if vis[u] is true then continue
     otherwise 
+      vis[u] = true
       for all outgoing edge from u, let it be (v, w) // here (v, w) = (outgoing node, weight of the edge)
         if dist[v] > dist[u] + w then
           dist[v] = dist[u] + w
