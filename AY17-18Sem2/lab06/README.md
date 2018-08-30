@@ -4,23 +4,23 @@
 
 Here is a pdf version of the ppt I covered during the lab. And the codes that I (skimmed through) / (demonstrated live).
 
-  [content.pdf](https://sidhant007.github.io/CS2040C/lab06/content.pdf) (The pdf version of the ppt shown) 
+  [content.pdf](content.pdf) (The pdf version of the ppt shown)
 
-  [map.cpp](https://sidhant007.github.io/CS2040C/lab06/map.cpp) (The map demo code)
+  [map.cpp](map.cpp) (The map demo code)
 
-  [IndexingCityNames.cpp](https://sidhant007.github.io/CS2040C/lab06/IndexingCityNames.cpp) (The code for the problem of indexing city names discussed in one of the slides)
+  [IndexingCityNames.cpp](IndexingCityNames.cpp) (The code for the problem of indexing city names discussed in one of the slides)
 
-  [KattisCompoundWords.cpp](https://sidhant007.github.io/CS2040C/lab06/KattisCompoundWords.cpp) (The solution code for the problem <a href = "https://open.kattis.com/problems/compoundwords">Kattis Compound Words</a> discussed in the lab which involves the use of set/map/set_intersection)
+  [KattisCompoundWords.cpp](KattisCompoundWords.cpp) (The solution code for the problem <a href = "https://open.kattis.com/problems/compoundwords">Kattis Compound Words</a> discussed in the lab which involves the use of set/map/set_intersection)
 
-## Challenge Questions - 
+## Challenge Questions -
 
-Q) Try to the Kattis Compound Words question using O(N) memory. Assume that all the strings are of small length and therefore the length of the strings does not affect the memory analysis. Our original approach in the lab was putting O(N^2) strings in a set, which therefore requires O(N^2) memory. Now I want you to restrict the usage of at most O(N) memory and still print out all the N^2 strings. Do note that you would still be printing N^2 strings, which does not mean usage of N^2 memory. 
+Q) Try to the Kattis Compound Words question using O(N) memory. Assume that all the strings are of small length and therefore the length of the strings does not affect the memory analysis. Our original approach in the lab was putting O(N^2) strings in a set, which therefore requires O(N^2) memory. Now I want you to restrict the usage of at most O(N) memory and still print out all the N^2 strings. Do note that you would still be printing N^2 strings, which does not mean usage of N^2 memory.
 
 Hint - Try to generate all the strings in a systematic manner such that you get them in sorted order. Use a heap / priority_queue.
 
 <details>
   <summary>Solution</summary>
-  The solution idea is this - 
+  The solution idea is this -
   <br>
   Sort the strings in ascending order and label them s1 &lt; s2 &lt; ... &lt; sn.
   <br>
@@ -30,7 +30,7 @@ Hint - Try to generate all the strings in a systematic manner such that you get 
   <br>
   And so on till - sn + s1 &lt; sn + s2 &lt; sn + s3 &lt; ... &lt; sn + s(n - 1). Let this be equation n.
   <br>
-  Create a priority queue of strings which sorts them in ascending order, so techincally a min heap. Label it pq. 
+  Create a priority queue of strings which sorts them in ascending order, so techincally a min heap. Label it pq.
   <br>
   Push in {s1 + s2, s2 + s1, s3 + s1, s4 + s1, ..., sn + s1} inside the PQ, i.e all the first terms in equation 1, equation 2, equation 3, ... equation n.
   <br>
