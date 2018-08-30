@@ -2,15 +2,15 @@
 
 Here is a pdf version of the ppt I covered during the lab. And the codes that I (skimmed through) / (demonstrated live).
 
-  [content.pdf](https://sidhant007.github.io/CS2040C/lab01/content.pdf) (The pdf version of the ppt shown)
+  [content.pdf](content.pdf) (The pdf version of the ppt shown)
 
-  [vectors.cpp](https://sidhant007.github.io/CS2040C/lab01/vectors.cpp) (in-built functions of vectors and algorithms)
+  [vectors.cpp](vectors.cpp) (in-built functions of vectors and algorithms)
 
-  [strings.cpp](https://sidhant007.github.io/CS2040C/lab01/strings.cpp) (in-built functions of strings and algorithms)
+  [strings.cpp](strings.cpp) (in-built functions of strings and algorithms)
 
-  [istringstream.cpp](https://sidhant007.github.io/CS2040C/lab01/istringstream.cpp) (based on istringstream)
+  [istringstream.cpp](istringstream.cpp) (based on istringstream)
 
-  [register.cpp](https://sidhant007.github.io/CS2040C/lab01/register.cpp) (My solution to the REGISTER problem)
+  [register.cpp](register.cpp) (My solution to the REGISTER problem)
 
 Challenge Questions -
 
