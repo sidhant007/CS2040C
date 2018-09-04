@@ -2,13 +2,13 @@
 
 Here is a pdf version of the ppt I covered during the lab. And the codes that I (skimmed through) / (demonstrated live).
 
-  [content.pdf](content.pdf) (The pdf version of the ppt shown) [To be uploaded]
+  [content.pdf](content.pdf) (The pdf version of the ppt shown)
 
-  [vectors.cpp](vectors.cpp) (in-built functions of vectors and algorithms) [To be uploaded]
+  [vectors.cpp](vectors.cpp) (in-built functions of vectors and algorithms)
 
-  [strings.cpp](strings.cpp) (in-built functions of strings and algorithms) [To be uploaded]
+  [strings.cpp](strings.cpp) (in-built functions of strings and algorithms)
 
-  [sideways_sorting.cpp](sideways_sorting.cpp) (Solution to [this](https://open.kattis.com/problems/sidewayssorting) problem) [To be uploaded]
+  [sideways_sorting.cpp](sideways_sorting.cpp) (Solution to [this](https://open.kattis.com/problems/sidewayssorting) problem)
 
 Challenge Questions -
 
