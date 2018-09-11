@@ -1,4 +1,4 @@
-## Lab 01
+## Lab 02
 
 Here is a pdf version of the ppt I covered during the lab. And the codes that I (skimmed through) / (demonstrated live).
 
@@ -14,7 +14,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
 **Apart from all this I would like you all to go through these function below for many different use cases** -
 
-  [nth_element](http://en.cppreference.com/w/cpp/algorithm/nth_element) (Can be useful for PS1 :o )
+  [nth_element](http://en.cppreference.com/w/cpp/algorithm/nth_element)
 
   [binary_search](http://en.cppreference.com/w/cpp/algorithm/binary_search) (This function assumes the vector/array to be already sorted)
 
