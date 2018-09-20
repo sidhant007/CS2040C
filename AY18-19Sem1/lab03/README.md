@@ -25,6 +25,7 @@ Q) Easy questions -
   2. Similar as above, just the breaking condition is now when node->val == find_value, return true.
   3. Iterate to the kth element first. Let this node be a, and the next node be b. Now let us say we want to insert the new node named c, then we insert it like this - We set a->next = c. We also set c->next = b. We are done.
 </details>
+Refer to the solution code [here](list_hw.cpp)
 
 Q) Medium Question - Click [here](https://stackoverflow.com/questions/2663115/how-to-detect-a-loop-in-a-linked-list).
 
