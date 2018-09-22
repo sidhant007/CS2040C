@@ -19,11 +19,16 @@ Q) Read up/Try to find the differences between STL Deque (Double Ended Queue) an
 
 <details>
   <summary>Solution</summary>
-  Visit https://stackoverflow.com/questions/1436020/c-stl-containers-whats-the-difference-between-deque-and-list for some info
   Apart from that the broad differences I am able to find are -
-  1. DEQUE is like a superset of VECTOR. It is VECTOR ABILITIES + PUSH_FRONT + POP_FRONT
-  2. The only feature lacking in DEQUE that is there in vector is mehtod capacity and reserve.
-  3. List differs from vector, in mainly back-end implementation and some pros and cons as follows -
-    a. Vector/Deque has O(constant time) access to a random element, whereas List has O(N).
-    b. List can do insertion in O(1) in between, given it has an iterator to the immediate previous/next element where we want to insert. For a vector/deque the insertion in between is always O(N) (irrespective of the fact that we have an iterator or not)
+  <br>
+  <ol>
+    <li>DEQUE is like a superset of VECTOR. It is VECTOR ABILITIES + PUSH_FRONT + POP_FRONT. </li>
+    <li>The only feature lacking in DEQUE that is there in vector is mehtod capacity and reserve. </li>
+    <li>List differs from vector, in mainly back-end implementation and some pros and cons as follows - </li>
+      <ol>
+        <li>Vector/Deque has O(constant time) access to a random element, whereas List has O(N). </li>
+        <li>List can do insertion in O(1) in between, given it has an iterator to the immediate previous/next element where we want to insert. For a vector/deque the insertion in between is always O(N) (irrespective of the fact that we have an iterator or not) </li>
+      </ol>
+  </ol>
 </details>
+Visit [here](https://stackoverflow.com/questions/1436020/c-stl-containers-whats-the-difference-between-deque-and-list) for more info
