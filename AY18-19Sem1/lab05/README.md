@@ -5,6 +5,7 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
   [content.pdf](content.pdf) (The pdf version of the ppt shown)
 
   [priority_queue_stl.cpp](priority_queue_stl.cpp) (Example usage of STL Priority Queue)
+
   [tree.cpp](tree.cpp) (Methods for creating and traversing a binary tree)
 
 **Challenge Questions** -
