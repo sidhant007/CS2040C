@@ -11,3 +11,7 @@ Below are the links for all the labs.
   [Lab 04](lab04)
 
   [Lab 05](lab05)
+
+  [Lab 06](lab06)
+
+  [Lab 07](lab07)
