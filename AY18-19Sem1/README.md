@@ -15,3 +15,5 @@ Below are the links for all the labs.
   [Lab 06](lab06)
 
   [Lab 07](lab07)
+
+  [Lab 09](lab09)
