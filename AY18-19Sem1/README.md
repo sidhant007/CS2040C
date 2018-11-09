@@ -16,4 +16,8 @@ Below are the links for all the labs.
 
   [Lab 07](lab07)
 
+  Lab 08 (Mock PE) (Did previous year questions)
+
   [Lab 09](lab09)
+
+  Lab 10 (VisuAlgo Quiz)
