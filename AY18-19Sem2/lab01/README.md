@@ -1,4 +1,4 @@
-## Lab 02
+## Lab 01
 
 Here is a pdf version of the ppt I covered during the lab. And the codes that I (skimmed through) / (demonstrated live).
 
