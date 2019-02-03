@@ -1,0 +1,10 @@
+Step-1: Compute in-degree (number of incoming edges) for each of the vertex present in the DAG (Directed Acyclic Graph)
+
+Step-2: Pick all the vertices with in-degree as 0 and add them into a queue (Enqueue operation)
+
+Step-3: Remove a vertex from the queue (Dequeue operation) and then.
+
+	Decrease in-degree by 1 for all its neighbouring nodes.
+	If in-degree of a neighbouring nodes is reduced to zero, then add it to the queue.
+
+Step 4: Repeat Step 3 until the queue is empty.
