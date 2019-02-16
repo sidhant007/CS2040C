@@ -21,7 +21,7 @@ Q) Try to simulate the functions of a QUEUE, i.e push(), front(), pop() using on
   <a href = "https://stackoverflow.com/questions/69192/how-to-implement-a-queue-using-two-stacks">Stack OverFlow Link</a>
 </details>
 
-Q) In the quicksort element, let us do the following 4 variations, for each variation try to comment on the time complexity of the solution? (HINT - Making a recursion tree, helps in analysis of recursive algorithms)
+Q) In the quicksort algorithm, let us do the following 4 variations, for each variation try to comment on the time complexity of the solution? (HINT - Making a recursion tree, helps in analysis of recursive algorithms)
 
 1. If we always pick the smallest element as pivot
 2. If we always pick the median as pivot
@@ -32,6 +32,6 @@ Q) In the quicksort element, let us do the following 4 variations, for each vari
   <summary>Solution</summary>
   1. O(N^2) <br>
   2. O(NlogN) <br>
-  3. O(NlogN), average case (Expected time complexity) <br>
-  4. O(NlogN), here the base of logarithm is 3/2 instead of the classical base 2. <br>
+  3. O(NlogN), average case (Expected time complexity) (Proof Idea - The recursion tree depth will be expected 2logN, since on average after every 2 tries, we will get a Tails on the coin which helps us in reducing the problem by half, therefore N*2logN) <br>
+  4. O(NlogN), here the base of logarithm is 3/2 instead of the classical base 2. (Proof Idea - In each recursion depth, if the current size of the problem is N, then it becomes (2/3)N or (1/3)N, in worst case it always becomes (2/3)N, but then how many times can you multiply (2/3) to N, till the time you hit 1, i.e simply logN with base of 3/2) <br>
 </details>
