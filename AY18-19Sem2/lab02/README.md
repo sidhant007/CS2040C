@@ -30,8 +30,8 @@ Q) In the quicksort element, let us do the following 4 variations, for each vari
 
 <details>
   <summary>Solution</summary>
-  1. O(N^2)
-  2. O(NlogN)
-  3. O(NlogN), average case (Expected time complexity)
-  4. O(NlogN), here the base of logarithm is 3/2 instead of the classical base 2.
+  1. O(N^2) <br>
+  2. O(NlogN) <br>
+  3. O(NlogN), average case (Expected time complexity) <br>
+  4. O(NlogN), here the base of logarithm is 3/2 instead of the classical base 2. <br>
 </details>
