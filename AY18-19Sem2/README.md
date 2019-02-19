@@ -2,6 +2,10 @@
 
 Below are the links for all the labs.
 
-  [Lab 01](lab01)
+  Lab 01 (Ungraded lab)
 
   [Lab 02](lab02)
+
+  [Lab 03](lab03)
+
+  [Lab 04](lab04)

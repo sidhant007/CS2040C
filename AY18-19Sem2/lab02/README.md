@@ -4,34 +4,107 @@ Here is a pdf version of the ppt I covered during the lab. And the codes that I 
 
   [content.pdf](content.pdf) (The pdf version of the ppt shown)
 
-  [STLList.cpp](STLList.cpp) (The STL List implementation)
+  [ListVector.cpp](ListVector.cpp) (Using vector instead of array in the list array code)
 
-  [STLStack.cpp](STLStack.cpp) (The STL Stack implementation)
+  [Birthday.cpp](Birthday.cpp) (Birthday sorting problem. Highlights of this problem were - using tuple, using multiply with -1 for year, to sort in descending according to year)
 
-  [STLQueue.cpp](STLQueue.cpp) (The STL Queue implementation)
+  [set_intersection.cpp](set_intersection.cpp) (set intersection result of 2 sorted vectors)
 
-  [STLDeque.cpp](STLDeque.cpp) (The STL Deque implementation) *(The deque is NOT implemented using DLL (Doubly linked list) internally, it is actually implemented using the concept of dynamic arrays. This is because it supports accessing any random element in O(1), i.e DQ[x] can be accessed for any x in O(1). The broad idea of dynamic array technique is that you have a structure like vector, but each node of vector does not store an element instead it stores a fixed size array. The in-depth details are out of scope.)*
+  [findSumZ.cpp](findSumZ.cpp) (The problem states that given a sorted vector V and a target variable Z find 2 elements in V, such that the sum of those 2 elements is equal to z)
+
+  **Apart from all this I would like you all to go through these function below for many different use cases** -
+
+  [nth_element](http://en.cppreference.com/w/cpp/algorithm/nth_element) (Can be useful for PS1 :o )
+
+  [binary_search](http://en.cppreference.com/w/cpp/algorithm/binary_search) (This function assumes the vector/array to be already sorted)
+
+  [lower_bound](http://en.cppreference.com/w/cpp/algorithm/lower_bound) (Assumes vector to be sorted. Also see upper_bound)
+
+  [unique](http://en.cppreference.com/w/cpp/algorithm/unique) (Returns a iterator/pointer to the end of the resulting vector, see example for clarity)
+
+  [set_intersection](http://en.cppreference.com/w/cpp/algorithm/set_intersection) (In the example given, this function uses [back_inserter()](http://en.cppreference.com/w/cpp/iterator/back_inserter))
+
+  [set_union](http://en.cppreference.com/w/cpp/algorithm/set_union) (Similar to above one)
+
+  [tuple](http://en.cppreference.com/w/cpp/utility/tuple/get) (See the example here, highlights are - can use auto to make_tuple() and can also do get&lt;data_type&gt; if ensured that there is only entry in the tuple having data_type)
 
 **Challenge Questions** -
 
-Q) Try to simulate the functions of a QUEUE, i.e push(), front(), pop() using only 2 STL stacks (NOT ALLOWED TO USE ANY ARRAYS) (You are allowed to make the operations expensive, i.e instead of O(1) they can be O(N))
+Q) Given an already sorted vector V and a target variable Z in input, check if there exists 2 elements in v, such that x + y = z, where x and y both belong to V. **This should be done in O(n)** (Do note - The vector in this case is sorted already in input)
 
 <details>
   <summary>Solution</summary>
-  <a href = "https://stackoverflow.com/questions/69192/how-to-implement-a-queue-using-two-stacks">Stack OverFlow Link</a>
+  <pre>
+  // Let the vector be V and the target be Z. Assuming V to be sorted.
+  int l = 0;
+  for(int r = (int)V.size() - 1; r >= 0; r--) {
+    while(V[l] + V[r] < z and l + 1 < r)  l++;
+    if(V[l] + V[r]  == z) {
+      cout<<"Found --> "<<V[l]<<" "<<V[r]<<endl;
+      break;
+    }
+  }
+  // The broad idea is to have 2 pointers, one on the left most
+  // side of the vector and the other on the right most side.
+  // Now slowly move the right pointer leftwards, i.e decrement
+  // its postion by -1. While you are moving it to the left you
+  // will realise that the net sum of A[l] + A[r] would decrease,
+  // because A[r] < A[r + 1], so to again up this value close
+  // to Z, you move l pointer forward, i.e increment it.
+  </pre>
 </details>
 
-Q) In the quicksort algorithm, let us do the following 4 variations, for each variation try to comment on the time complexity of the solution? (HINT - Making a recursion tree, helps in analysis of recursive algorithms)
-
-1. If we always pick the smallest element as pivot
-2. If we always pick the median as pivot
-3. If we do a coin toss, if head comes, we pick the smallest element as pivot, otherwise we pick the median.
-4. If the current subproblem is of size N, then we pick the (N/3)rd smallest element, instead of the median. (The median by convention is (N/2)th smallest element)
+Q) Try to do set_union for 2 already sorted vectors A and B in O(n) using a 2-pointer style approach. (Will resemble to the merge operation in a merge sort)
+**Update - 2 pointer approach basically means avoid using set_union and set_intersection**
 
 <details>
   <summary>Solution</summary>
-  1. O(N^2) <br>
-  2. O(NlogN) <br>
-  3. O(NlogN), average case (Expected time complexity) (Proof Idea - The recursion tree depth will be expected 2logN, since on average after every 2 tries, we will get a Tails on the coin which helps us in reducing the problem by half, therefore N*2logN) <br>
-  4. O(NlogN), here the base of logarithm is 3/2 instead of the classical base 2. (Proof Idea - In each recursion depth, if the current size of the problem is N, then it becomes (2/3)N or (1/3)N, in worst case it always becomes (2/3)N, but then how many times can you multiply (2/3) to N, till the time you hit 1, i.e simply logN with base of 3/2) <br>
+  <pre>
+  // Assuming I have vector A<> and vector B<> sorted.
+  int l1 = 0, l2 = 0, top = -1;
+  // top denotes the current top value in the res vector.
+  // I am assuming that both the vectors will NOT contain any -1.
+  // -1 is a sentinel value used to make the code shorter.
+  vector&l;int&rt; res; //The vector which will have the union result.
+  while(l1 < (int)A.size() or l2 < (int)B.size()) {
+    if(l1 == (int)A.size()) {
+      if(B[l2] != top)  res.push_back(B[l2]), top = B[l2];
+      l2++;
+    }
+    else if(l2 == (int)B.size()) {
+      if(A[l1] != top)  res.push_back(A[l1]), top = A[l1];
+      l1++;
+    }
+    else {
+      if(A[l1] <= B[l2]) {
+        if(A[l1] != top)  res.push_back(A[l1]), top = A[l1];
+        l1++;
+      }
+      else {
+        if(B[l2] != top)  res.push_back(B[l2]), top = B[l2];
+        l2++;
+      }
+    }
+  }
+  for(auto v : res) cout<<v<<" ";
+  cout<<endl;
+  // Here the broad idea is that you keep 2 pointers
+  // where you move the one which points to the smaller element
+  // and push it in the res vector if and only if the current
+  // element at the top of the res vector is different from the element
+  // being pushed. This ensured that an element is only pushed once.
+  // Therefore it is equivalent to a set_union.
+  // If you did NOT keep the top condition and just pushed it regardless of
+  // the current top, then this would be the code for the merge step in
+  // a merge-sort algorithm implementation.
+  </pre>
 </details>
+
+Q) Sort a collection of names (represented as strings using only 'a' - 'z' without any spaces) first based on ascending length of the names, incase of ties, break the ties by descending order of the names themselves (Ex. {"abc", "ab", "xyz"} in sorted order will be {"ab", "xyz", "abc"})
+
+<details>
+  <summary>Solution</summary>
+  The broad idea is to make a pair<int, string> where pair.first = -1 * length_of_the_string and pair.second = the string itself, so now we sort a vector of these pairs and then reverse it. One alternate approach is to define your own comparator function and another alternate approach but slightly complicated is to remap 'a' to 'z' , 'b' to 'y', 'c' to 'x' and so on, now the strings will "kind of look like negated strings", so now you could just sort the entire thing, using +1 * length_of_the_string in pair.first.
+</details>
+
+**Note** - I haven't tested the 2 pseudo-code solutions for the challenge questions on corner test cases and only verified that they work on simpler ones, in case any one of you find an issue with these codes, do drop me a mail :)
